@@ -1,0 +1,14 @@
+{
+  "name": "gChat",
+  "version": "0.0.1",
+  "description": "Desktop app for google chat based on simple example that loads a URL in an Electron window",
+  "repository": "Jiri-Kremser/gChat-electron",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron app.js"
+  },
+  "license": "Apache v2",
+  "devDependencies": {
+    "electron": "^3.0.2"
+  }
+}
