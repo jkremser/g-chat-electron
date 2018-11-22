@@ -26,7 +26,7 @@ app.once('ready', () => {
 
   const sections = [
     {
-      header: require('./package.json').name,
+      header: 'gChat-electron',
       content: require('./package.json').description
     },
     {

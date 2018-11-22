@@ -1,5 +1,5 @@
 {
-  "name": "gChat-electron",
+  "name": "@jkremser/gChat-electron",
   "version": "0.0.1",
   "description": "Desktop app for google chat based on simple example that loads a URL in an Electron window",
   "repository": {
