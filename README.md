@@ -13,6 +13,7 @@ for chat.google.com.
 The simplest way to install the app is installing from npmjs.com:
 
 ```bash
+sudo npm i -g electron --unsafe-perm=true
 sudo npm i -g g-chat-electron
 gChat
 ```
