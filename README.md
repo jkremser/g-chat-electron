@@ -13,3 +13,28 @@ for chat.google.com.
 - Clone this repository
 - `npm install` to install the application's dependencies
 - `npm start`
+
+### Binary and rpm
+
+#### Prerequisities
+If you want to generate RPM package, it requires the `rpm-build` package to be installed
+
+```
+sudo dnf install rpm-build lsb
+```
+
+### Generate binaries
+
+```
+npm run binaries
+ls dist/gChat-*
+```
+
+### Generate RPM
+
+```
+npm run binaries
+npm run rpm
+ls ./dist/installers/
+```
+

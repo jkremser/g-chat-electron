@@ -12,7 +12,8 @@
   "main": "app.js",
   "scripts": {
     "start": "electron app.js",
-    "binaries": "./node_modules/electron-packager/cli.js . gChat --platform linux,darwin --arch x64"
+    "binaries": "electron-packager . gChat --platform=linux,darwin --arch=x64 --out dist/ --overwrite -icon=assets/icon.png --prune=true --asar",
+    "rpm": "electron-installer-redhat --src dist/gChat-linux-x64/ --dest dist/installers/ --arch x86_64"
   },
   "license": "Apache-2.0",
   "devDependencies": {
