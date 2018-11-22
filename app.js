@@ -37,17 +37,18 @@ app.once('ready', () => {
       content: `Project home: {italic ${repoUrl}}`
     }
   ]
-  const usage = commandLineUsage(sections)
-  console.log(usage)
-
-  console.log(chalk.red('foobar'))
-
+  
   const options = commandLineArgs(optionDefinitions)
-
-  console.log(options)
-
-  //const url = process.argv[2]
-  window.loadURL("https://chat.google.com")
+  if (options.version) {
+    console.log(require('./package.json').version)
+    app.quit()
+  } else if (options.help) {
+    const usage = commandLineUsage(sections)
+    console.log(usage)
+    app.quit()
+  } else {
+    window.loadURL(options.url || 'https://chat.google.com')
+  }
 
   // Show window when page is ready
   window.once('ready-to-show', () => {
