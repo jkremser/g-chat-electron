@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 
-var spawn = require('child_process').spawn
-var join = require('path').join
+const spawn = require('child_process').spawn
+const join = require('path').join
+const params = process.argv.slice(2)
 
-var app = spawn('npm', ['start'], { 
+const app = spawn('npm', ['start', '--'].concat(params), { 
   stdio: 'inherit',
   cwd: join(__dirname) 
-}).on('exit', function (i, m) {
-  process.exit()
-})
+}).on('exit', (i, m) => process.exit())
