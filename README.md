@@ -7,6 +7,16 @@
 Simple [Electron](http://electron.atom.io) application that works as a desktop client
 for chat.google.com.
 
+
+## Usage
+
+The simplest way to install the app is installing from npmjs.com:
+
+```bash
+sudo npm i -g @jkremser/g-chat-electron
+gChat
+```
+
 ## Getting started
 
 - Install [Node LTS](https://nodejs.org)
