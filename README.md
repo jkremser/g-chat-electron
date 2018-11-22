@@ -1,6 +1,6 @@
 # gChat-electron
 [![Build Status](https://travis-ci.org/Jiri-Kremser/g-chat-electron.svg?branch=master)](https://travis-ci.org/Jiri-Kremser/g-chat-electron)
-[![npm version](https://badge.fury.io/js/%40jkremser%2Fg-chat-electron.svg)](https://badge.fury.io/js/%40jkremser%2Fg-chat-electron)
+[![npm version](https://badge.fury.io/js/%40g-chat-electron.svg)](https://badge.fury.io/js/%40g-chat-electron)
 
 
 
