@@ -11,11 +11,14 @@
   },
   "main": "app.js",
   "scripts": {
-    "start": "electron app.js"
+    "start": "electron app.js",
+    "binaries": "./node_modules/electron-packager/cli.js . gChat --platform linux,darwin --arch x64"
   },
   "license": "Apache-2.0",
   "devDependencies": {
-    "electron": "^3.0.2"
+    "electron": "^3.0.2",
+    "electron-installer-redhat": "^0.5.0",
+    "electron-packager": "^12.2.0"
   },
   "dependencies": {
     "chalk": "^2.4.1",
