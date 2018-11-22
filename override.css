@@ -1,0 +1,16 @@
+/* 'hide' what should be hidden */
+div[aria-hidden] {
+    background-color: transparent !important;
+}
+
+/* this can break if they chang the style name, it's there for emoji popup*/
+c-wiz.zZ3s4 div {
+    background-color: rgba(0, 0, 0, .5) !important;
+}
+
+
+div,
+span {
+    background-color: #454545 !important;
+    color: #ccc !important;
+}

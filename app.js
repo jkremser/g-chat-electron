@@ -4,6 +4,8 @@ const commandLineUsage = require('command-line-usage')
 const repoUrl = require('./package.json').repository.url;
 const chalk = require('chalk');
 const optionDefinitions = require('./options');
+const fs = require('fs')
+
 
 
 let window = null
@@ -48,6 +50,16 @@ app.once('ready', () => {
     app.quit()
   } else {
     window.loadURL(options.url || 'https://chat.google.com')
+    if (options.dark) {
+      window.webContents.on('did-finish-load', () => {
+        fs.readFile(__dirname + '/override.css', "utf-8", (error, data) => {
+          if (!error) {
+            const formatedData = data.replace(/\s{2,10}/g, ' ').trim()
+            window.webContents.insertCSS(formatedData)
+          }
+        })
+      })
+    }
   }
 
   // Show window when page is ready
