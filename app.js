@@ -1,4 +1,10 @@
 const {app, BrowserWindow} = require('electron') // http://electron.atom.io/docs/api
+const commandLineArgs = require('command-line-args')
+const commandLineUsage = require('command-line-usage')
+const repoUrl = require('./package.json').repository.url;
+const chalk = require('chalk');
+const optionDefinitions = require('./options');
+
 
 let window = null
 
@@ -17,6 +23,28 @@ app.once('ready', () => {
       nodeIntegration: false
     }
   })
+
+  const sections = [
+    {
+      header: require('./package.json').name,
+      content: require('./package.json').description
+    },
+    {
+      header: 'Options',
+      optionList: optionDefinitions
+    },
+    {
+      content: `Project home: {italic ${repoUrl}}`
+    }
+  ]
+  const usage = commandLineUsage(sections)
+  console.log(usage)
+
+  console.log(chalk.red('foobar'))
+
+  const options = commandLineArgs(optionDefinitions)
+
+  console.log(options)
 
   //const url = process.argv[2]
   window.loadURL("https://chat.google.com")
