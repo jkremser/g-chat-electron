@@ -18,6 +18,12 @@ sudo npm i -g g-chat-electron
 gChat
 ```
 
+For dark theme, run the app with
+
+```bash
+gChat -d
+```
+
 ## Getting started
 
 - Install [Node LTS](https://nodejs.org)
