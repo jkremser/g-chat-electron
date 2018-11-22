@@ -1,16 +1,19 @@
 {
-  "name": "@jkremser/g-chat-electron",
+  "name": "g-chat-electron",
   "version": "0.0.1",
   "description": "Desktop app for google chat based on simple example that loads a URL in an Electron window",
   "repository": {
     "type": "git",
     "url": "https://github.com/Jiri-Kremser/g-chat-electron"
   },
+  "bin": {
+    "gChat": "main.js"
+  },
   "main": "app.js",
   "scripts": {
     "start": "electron app.js"
   },
-  "license": "Apache v2",
+  "license": "Apache-2.0",
   "devDependencies": {
     "electron": "^3.0.2"
   },
