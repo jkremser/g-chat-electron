@@ -1,6 +1,6 @@
 {
   "name": "g-chat-electron",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Desktop app for google chat based on simple example that loads a URL in an Electron window",
   "repository": {
     "type": "git",
