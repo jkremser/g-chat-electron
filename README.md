@@ -55,3 +55,19 @@ npm run rpm
 ls ./dist/installers/
 ```
 
+### Gnome Desktop Entry
+
+Provided you've installed the app via `npm i -g ..`, you can add the desktop entry by:
+
+```bash
+cat << EOF > ~/.local/share/applications/google-chat.desktop
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Google Chat
+Comment=Google Chat Destop App
+Exec=/usr/bin/gChat -d
+Icon=/usr/lib/node_modules/g-chat-electron/assets/icon.png
+Terminal=false
+EOF
+```
