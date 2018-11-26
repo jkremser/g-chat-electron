@@ -1,7 +1,3 @@
-/* 'hide' what should be hidden 
-div[aria-hidden], .BScnzc {
-    background-color: transparent !important;
-}*/
 .XweIZc {
     background-color: transparent !important;
 }
@@ -18,7 +14,7 @@ div[aria-hidden], .BScnzc {
 
 /* contact cards */
 .Ukpgsf {
-    background-color: #666 !important;
+    background-color: #454545 !important;
     border: 1px solid;
     color: #fff !important;
 }
@@ -65,7 +61,7 @@ div .mUbCce.u3bW4e,
 }
 */
 .Ukpgsf * {
-    background-color: #666 !important;
+    background-color: #454545 !important;
 }
 
 
@@ -80,7 +76,7 @@ c-wiz.zZ3s4 div {
 .A2BXPe,
 .nhkdZe,
 .cZICLc {
-    background-color: #666 !important;
+    background-color: #454545 !important;
 }
 
 .nHjhsd {
@@ -98,7 +94,7 @@ c-wiz.zZ3s4 div {
 
 .Pgm7ld,
 .EvLf6c {
-    background-color: #555 !important;
+    background-color: #444 !important;
 }
 
 .dJ9vNe {
@@ -117,6 +113,6 @@ c-wiz.zZ3s4 div {
 
 div,
 span {
-    background-color: #454545 !important;
+    background-color: #373737 !important;
     color: #ccc !important;
 }
